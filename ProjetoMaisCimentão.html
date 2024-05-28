@@ -10,7 +10,8 @@
         <style>
             .body {
                 background-image: url("https://cbic.org.br/wp-content/uploads/2022/02/cbic-869-scaled.jpg");
-                background-size: 100VW, 100VH;
+                background-size: cover;
+                background-position: center;
             }
 
             .header {
@@ -31,12 +32,12 @@
                 justify-content: space-evenly;
                 display: flex;
                 align-items: center;
-                height: 450px;
+                height: 300px;
             }
 
             .sectionfooter1 {
                 text-align: center;
-                font-size: medium;
+                font-size: large;
             }
 
             .footer2 {
@@ -44,6 +45,7 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                margin: 0%;
             }
 
             .form {
@@ -54,7 +56,7 @@
                 margin-bottom: 20px;
                 width: 50%;
                 margin-left: 25%;
-                height: 265px;
+                height: 375px;
             }
 
             .form input {
@@ -100,17 +102,17 @@
     <body class="body">
         <div>
 
-            <header class="header">
+            <header class="header" id="header">
                 <img src="C:\Users\Joao Vitor\Downloads\1537966267250-removebg-preview.png" width="300px">
             </header>
 
             <nav>
                 <ul class="menu">
-                    <li>Home</li>
-                    <li>Institucional</li>
-                    <li>Cimento</li>
-                    <li>Argamassa</li>
-                    <li>Contato</li>
+                    <li><a href="#header" style="color: black;">Home</a></li>
+                    <li><a href="#institucional" style="color: black;">Institucional</a></li>
+                    <li><a href="Cimento.html" style="color: black;">Cimento</a></li>
+                    <li><a href="Argamassa.html" style="color:black">Argamassa</a></li>
+                    <li><a href="#rodapé" style="color: black">Contato</a></li>
                     <li>
                         <a
                             href="c:\Users\Joao Vitor\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\2838023A778DFAECDC212708F721B788\Vídeo do WhatsApp de 2024-05-19 à(s) 17.16.17_4ba39b5e.mp4">SOBRE
@@ -119,9 +121,11 @@
                 </ul>
             </nav>
 
-            <section class="header">
-                <h1><strong>Cimento e Argamassa na Paraíba é com a gente!</strong></h1>
-                <p style="margin-right: 30%;"> Há mais de uma década sendo o diferencial da sua construção fornecendo
+            <section class="header"
+                style="background-color: greenyellow; color: black; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <h1 style="font-size: xx-large;"><strong>Cimento e Argamassa na Paraíba é com a gente!</strong></h1>
+                <p style="margin-right: 30%; font-size: x-large;"> Há mais de uma década sendo o diferencial da sua
+                    construção fornecendo
                     cimento e argamassa a preços
                     competitivos e com entrega rápida para
                     construtoras, lojas de materiais de construção e consumidores.</p>
@@ -141,7 +145,7 @@
                         você encontra Argamassas. Entre em contato com a gente!</p>
                 </section>
 
-                <section class="institucional">
+                <section class="institucional" id="institucional">
                     <h1 style="color: #06841A;">INSTITUCIONAL</h1>
                     <p>No mercado há mais de uma década, a Mais Cimentão comercializa a preços competitivos, cimento e
                         argamassa das melhores empresas brasileiras. Todos produtos certificados e com Selo de
@@ -180,54 +184,54 @@
                 </section>
             </section>
 
-            <section>
-                <form class="form" method="get" action="COTAÇÃO.html">
-                    <h2 style="margin-top: 50px; color: rgb(244, 235, 2) ;">PRECISA DE CIMENTO E ARGAMASSA NA PARAÍBA?
+            <section class="form">
+                <form method="post" action="COTAÇÃO.html">
+                    <h2 style=" color: rgb(244, 235, 2) ;">PRECISA DE CIMENTO E ARGAMASSA NA PARAÍBA?
                     </h2>
-                    <p style="margin-top: 50px;">É só preencher o formulário abaixo e entraremos em contato rapidamente.
+                    <p style="font-size: large;">É só preencher o formulário abaixo e entraremos em contato rapidamente.
                     </p>
-                    <labels>Nome</label>
-                        <input type="text" name="nome">
+                    <label>Nome</label>
+                    <input type="text" name="nome" required>
 
-                        <label>Email</label>
-                        <input type="email" name="email">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
 
-                        <label>Telefone</label>
-                        <input type="tel" name="telefone">
+                    <label>Telefone</label>
+                    <input type="tel" name="telefone" required>
 
-                        <label>Região de entrega</label>
-                        <select name="Região de entrega">
-                            <option value="Região de entrega" selected>Região de entrega</option>
-                            <option value="Grande João Pessoa">Grande João Pessoa</option>
-                            <option value="Campina Grande e Região">Campina Grande e Região</option>
-                        </select>
+                    <label>Região de entrega</label>
+                    <select name="Região de entrega">
+                        <option value="Região de entrega" selected>Região de entrega</option>
+                        <option value="Grande João Pessoa">Grande João Pessoa</option>
+                        <option value="Campina Grande e Região">Campina Grande e Região</option>
+                    </select>
 
-                        <label>Quantidade aproximada</label>
-                        <select name="Quantidade aproximada">
-                            <option value="Quantidade aproximada" selected>Quantidade aproximada</option>
-                            <option value="De 20 a 49 sacos">De 20 a 49 sacos</option>
-                            <option value="De 50 a 99 sacos">De 50 a 99 sacos</option>
-                            <option value="De 100 a 199 sacos">De 100 a 199 sacos</option>
-                            <option value="De 200 a 299 sacos">De 200 a 299 sacos</option>
-                            <option value="Acima de 300 sacos">Acima de 300 sacos</option>
-                        </select>
+                    <label>Quantidade aproximada</label>
+                    <select name="Quantidade aproximada">
+                        <option value="Quantidade aproximada" selected>Quantidade aproximada</option>
+                        <option value="De 20 a 49 sacos">De 20 a 49 sacos</option>
+                        <option value="De 50 a 99 sacos">De 50 a 99 sacos</option>
+                        <option value="De 100 a 199 sacos">De 100 a 199 sacos</option>
+                        <option value="De 200 a 299 sacos">De 200 a 299 sacos</option>
+                        <option value="Acima de 300 sacos">Acima de 300 sacos</option>
+                    </select>
 
-                        <label>Perfil do cliente</label>
-                        <select name="Perfil do cliente">
-                            <option value="Perfil do cliente" selected>Perfil do cliente</option>
-                            <option value="Construtora">Construtora</option>
-                            <option value="Loja de material de construção">Loja de material de construção</option>
-                            <option value="Pessoa Física">Pessoa Física</option>
-                            <option value="Outro">Outro</option>
-                        </select>
-                        <button
-                            style="background-color:rgb(244, 235, 2); text-align: center; font-size: medium; color:rgb(59, 56, 56)"
-                            type="submit">RECEBER COTAÇÃO</button>
+                    <label>Perfil do cliente</label>
+                    <select name="Perfil do cliente">
+                        <option value="Perfil do cliente" selected>Perfil do cliente</option>
+                        <option value="Construtora">Construtora</option>
+                        <option value="Loja de material de construção">Loja de material de construção</option>
+                        <option value="Pessoa Física">Pessoa Física</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                    <button
+                        style="background-color:rgb(244, 235, 2); text-align: center; font-size: medium; color:rgb(59, 56, 56)"
+                        type="submit">RECEBER COTAÇÃO</button>
                 </form>
             </section>
 
 
-            <footer>
+            <footer id="rodapé">
 
                 <section class="sectionfooter">
 
